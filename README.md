@@ -1,28 +1,24 @@
-# Zayan Haroon Moosa — Personal portfolio
+# Zayan Haroon Moosa — Engineering portfolio
 
-A responsive, static portfolio focused on personal Python and AWS automation projects. Built with semantic HTML and CSS; no build step, JavaScript runtime, or external font dependency.
+A static portfolio for AWS automation and application engineering, published at [zayan15.github.io](https://zayan15.github.io/).
 
-## Local preview
+## Pages
 
-From the repository directory, run `python3 -m http.server 8000`, then open `http://localhost:8000`.
+- `index.html`: project cards, professional experience, skills, certifications, and contact links.
+- `proledger.html`: ProLedger architecture case study and a standalone fictional ledger illustration. No authentication, cloud requests, or persistent storage.
+- `demos.html`: illustrated workflows for the four AWS projects, using synthetic examples.
+- `Zayan-Haroon-Moosa-Resume.pdf`: public résumé download.
 
-## Content
+Built with HTML, CSS, and small browser-side JavaScript demos. No build step or external JavaScript dependency is needed. The demos illustrate workflows; they are not live runs of the underlying projects.
 
-- Introduction and contact links
-- Four separate project cards linking to public repositories
-- Existing public professional experience, education, and certifications
-- Technologies demonstrated by the personal projects
-- Explicit prototype status and links to implementation limitations
+## Preview and review
 
-Update the text, project links, and styles in `index.html`. Keep claims tied to demonstrated work and exclude confidential employer details, credentials, and private configuration.
+Run `python3 -m http.server 8000` from the repository directory, then open `http://localhost:8000`.
 
-## Deployment
+Check mobile and desktop layouts, project and résumé links, keyboard focus, and interactive demo controls. In the ProLedger demo, adding the $24.50 sample receipt changes spending from $1,935.00 to $1,959.50 and grocery spending from $185.00 to $209.50. Reset restores the original fictional data. Transfers are excluded from spending.
 
-The existing `.github/workflows/static.yml` publishes the repository to GitHub Pages on pushes to `main` or manual workflow dispatch. A pull request does not deploy this update; merging it into `main` triggers the existing workflow.
+Project descriptions are grounded in reviewed local source. Keep production-validation limits explicit. Use only synthetic demo data; exclude credentials, private ledger records, and employer-confidential material.
 
-## Checks before publishing
+## Publishing
 
-- Check the layout at desktop and mobile widths.
-- Confirm navigation, repository links, LinkedIn, and email links.
-- Check keyboard focus and the skip link.
-- Confirm project descriptions match the linked implementations.
+The site is served through GitHub Pages. Open a pull request for changes and merge after review; the repository's configured Pages deployment publishes the main branch. A pull request alone does not update the public site.
